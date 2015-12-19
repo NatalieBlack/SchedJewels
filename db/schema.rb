@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151218225842) do
+ActiveRecord::Schema.define(version: 20151219001054) do
 
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at",  null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20151218225842) do
     t.date     "start_date"
     t.time     "end_time"
     t.date     "end_date"
+    t.string   "time_zone"
   end
 
   create_table "proposals_users", force: :cascade do |t|
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(version: 20151218225842) do
     t.date     "start_date"
     t.time     "end_time"
     t.date     "end_date"
+    t.string   "time_zone"
   end
 
   create_table "users", force: :cascade do |t|
